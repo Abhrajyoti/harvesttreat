@@ -256,6 +256,15 @@ function removeFromCart(productId) {
   renderCart();
 }
 
+function updateCartQuantity(productId, change) {
+  const line = state.cart.find((item) => item.id === productId);
+  if (!line) return;
+
+  line.qty += change;
+  if (line.qty <= 0) removeFromCart(productId);
+  else renderCart();
+}
+
 function renderCart() {
   const totalQty = state.cart.reduce((sum, item) => sum + item.qty, 0);
   const total = state.cart.reduce((sum, item) => {
@@ -280,7 +289,14 @@ function renderCart() {
         <p><strong>${product.name}</strong></p>
         <small>${product.quantity} x ${item.qty} - ${formatPrice(product.discountedPrice)} each after ${product.discount}% Off</small>
       </div>
-      <button type="button" data-remove="${product.id}">Remove</button>
+      <div class="cart-line-actions">
+        <div class="quantity-control" aria-label="Quantity for ${product.name}">
+          <button type="button" data-decrease="${product.id}" aria-label="Decrease quantity of ${product.name}">−</button>
+          <span aria-live="polite">${item.qty}</span>
+          <button type="button" data-increase="${product.id}" aria-label="Increase quantity of ${product.name}">+</button>
+        </div>
+        <button type="button" data-remove="${product.id}">Remove</button>
+      </div>
     `;
     return line;
   }));
@@ -333,8 +349,13 @@ productGrid.addEventListener("click", (event) => {
 });
 
 cartItems.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-remove]");
-  if (button) removeFromCart(button.dataset.remove);
+  const increaseButton = event.target.closest("[data-increase]");
+  const decreaseButton = event.target.closest("[data-decrease]");
+  const removeButton = event.target.closest("[data-remove]");
+
+  if (increaseButton) updateCartQuantity(increaseButton.dataset.increase, 1);
+  if (decreaseButton) updateCartQuantity(decreaseButton.dataset.decrease, -1);
+  if (removeButton) removeFromCart(removeButton.dataset.remove);
 });
 
 cartButton.addEventListener("click", openCart);
