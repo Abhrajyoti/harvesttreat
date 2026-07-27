@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harvest Treats</title>
+        
+        <link rel="stylesheet" href="HarvestTreats_sample_files/style.css">
+<link rel="stylesheet" href="HarvestTreats_sample_files/responsive.css">    
+        <link rel="stylesheet" href="HarvestTreats_sample_files/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <link rel="stylesheet" href="HarvestTreats_sample_files/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+   
+    </head>
+<body>
+    
+
+    
+    
+    <!--header start-->
+    
+    <header>
+    <div class="header-top py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="idheguyrew_inner">
+                        <ul>
+                            <!--<li>Beat the Heat 20% off everything with code SALE</li>-->
+                            <li>Everything You Need, All in One Place.</li>
+
+                            <li><a href="https://harvest.workstream.club/all-products">SHOP NOW</a></li>
+                            
+                            <!--<li><a href="#">*Details</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="idheguyrew_inner">
+                        <ul>
+                            <li>Free shipping on orders</li>
+
+                            <li><a href="javascript:void(0);">₹ 499</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-search-middle pt-4 pb-2">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="duhewrewr_left">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="uihduehwr_inner">
+                                   <a href="https://harvest.workstream.club/"> <img src="HarvestTreats_sample_files/logo.png" class="logo img-fluid" alt=""></a>
+                                    
+                                    <div class="responsive-toggle-search d-flex align-items-center">
+                                        <img src="HarvestTreats_sample_files/search.gif" class="responsive-search-icon me-3" id="responsive-search-ux-ui-btn" alt="">
+                                    
+                                        <i class="bi bi-bar-chart-steps" id="responsive-toggle-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    <script>
+                        function checklog()
+                        {
+                            toastr.options = {
+                                "closeButton": true,
+                                "progressBar": true
+                            };
+                            toastr.error('Please Login first');
+                            window.location.href = "/login";
+                        }
+                    </script>        
+
+                    <script>
+                        function submitForm() {
+                            event.preventDefault(); 
+                            var x = document.getElementById("myText").value;
+                            if(x=="")
+                            {
+                                alert('Plese enter the keyword before searching');
+                                return false;
+                            }
+                            document.getElementById('myform').submit();
+                        }
+                    </script>
+
+                            <div class="col-lg-7 pe-0 res-ui-ux-wrapper" id="responsive-search-ux-ui">
+                                <div class="uihduehwr_inner position-relative">
+                                    <form action="https://harvest.workstream.club/search-item" class="w-100 position-relative" id="myform" method="GET">
+                                        <input type="text" class="form-control" placeholder="Search Harvest Treats" name="search" id="myText">
+                                    
+                                        <a href="javascript:void(0)" class="arht bi position-absolute bi-search" onclick="submitForm()"></a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="duhewrewr_right">
+                        <ul class="mb-0 ps-0">
+                            <li class="me-4" id="zip-modal-btn">
+                               <i class="bi me-1 bi-geo-alt-fill"></i> 
+
+                               <div class="idjiswhirerr d-flex" id="pincode_header">
+                                                                           <span class="pin-empty-highlight">Check Zip</span>
+                                                                  </div>
+                            </li>
+                            
+                            <li class="me-4 position-relative custom-drop-down">
+                                <i class="bi me-1 bi-person-circle"></i> 
+                                                                 <a href="https://harvest.workstream.club/login"><span>Sign In</span></a>
+                                                                    
+                                
+                            </li>
+
+                            <li><i class="bi bi-basket2-fill" id="cart-basket"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-menu py-2">
+        <div class="container-fluid px-5">
+            <ul class="mb-0 ps-0">
+                <a href="https://harvest.workstream.club/all-products"><li>All Products</li></a>
+                  
+                
+                
+            </ul>
+        </div>
+    </div>        
+</header>
+
+
+
+
+<!--responsive backdrop start-->
+
+<div class="res-nav-fade position-fixed d-none hide-res-nav-backdrop" id="res-nav-fade-wrapper"></div>
+
+<!--responsive backdrop end-->
+
+
+
+<!--responsive nav menu start-->
+
+<div class="responsive-nav-menu-wrapper d-none bg-white position-fixed hide-res-nav p-4" id="responsive-nav-menu">
+    <div class="uihduehwr_inner">
+        <img src="HarvestTreats_sample_files/logo.png" class="logo img-fluid" alt="">
+    </div>
+    
+    <div class="res-header-menu py-2">
+        <ul class="mb-0 ps-0">
+            <li>New</li>
+
+            <li>Clearance</li>
+
+            <li>Idli &amp; Dosa Batter</li>
+
+            <li>Rice Rava Idli Batter</li>
+
+            <li>Wheat Chapati</li>
+
+            <li>Malabar Parota</li>                    
+        </ul>
+    </div>
+</div>
+
+<!--responsive nav menu end-->
+
+    
+
+
+
+
+<!--cart offset menu start-->
+
+<!--responsive backdrop start-->
+
+<div class="res-cart-fade position-fixed hide-res-cart-backdrop" id="res-cart-fade-wrapper"></div>
+
+<!--responsive backdrop end-->
+
+<div class="cart-offset-menu cart-offset-menu-hide position-fixed bg-white">
+    <div class="cart-offset-menu-header d-flex align-items-center justify-content-between p-4">
+        <h4 class="mb-0">My Cart </h4>
+        
+        <i class="bi bi-x-circle" id="cart-offset-menu-close"></i>
+    </div>
+    
+    <div class="car-offset-main-menu" id="fetch_cart_value">
+        
+               <p style="text-align:center;">Shopping cart is empty</p>
+       
+           </div>
+    
+    <div class="cart-offset-proceed bg-white w-100 position-absolute">
+        <div class="duiehwrewr p-4">
+            <div class="doiewrewrewr d-flex align-items-center justify-content-between" id="fetch_total_price">
+                                
+                            </div>
+        </div>
+        
+        
+        <div id="cart_button_section">
+                    </div>
+        <div id="checkout_button_section">
+                    </div>
+        
+    </div>
+</div>
+
+
+    <!--select option modal start-->
+    
+    <div class="s-o-modal w-100 h-100 fixed-top s-o-modal-hide" id="select-option-modal-wrapper">
+        <i class="bi bi-x-lg position-absolute" id="s-o-modal-close-icon-btn"></i>
+        
+        <div class="s-o-modal-wrapper bg-white p-5">
+            <h5 class="mb-3">Option For You</h5>
+            
+            <div class="row" id="verient_div_fetch">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-12 mb-3">
+                    <div class="niuhiuwee_left row">
+                        <div class="col-lg-4">
+                            <div class="diiewhrer_left" id="product_image">
+                                <a href="https://saampradayam.workstream.club/view-product/rice-bran-oil"><img src="HarvestTreats_sample_files/FILE1733316825.webp" alt=""></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8">
+                            <div class="ujdbhewhbrewr_right">
+                                <p class="mb-1" id="product_name">Vrihi Naturals Prawns Pickle - Spicy Coastal Delight</p>
+                                
+                                <div class="dasdcerffdsfr">
+                                    <div class="bder_price d-flex align-items-center" id="prive_div">
+                                        <h4 class="mb-0 me-3">Rs. 160</h4>
+        
+                                        <span>Rs. 205</span>
+                                    </div>
+                                </div>
+                   
+                                <div class="fuinreuhrretererr">
+                                    <div class="iduewrr_counter d-flex align-items-center">
+                                        <div class="djer_minus_plus djer_minus p-2">
+                                            <i class="bi bi-dash-lg"></i>
+                                        </div>
+                                        
+                                        <div class="count-show p-2">
+                                            <input type="number" class="text-center form-control p-2" value="1" id="show-count-number">
+                                        </div>
+                                        
+                                        <div class="djer_minus_plus djer_plus p-2">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12">
+                    <div class="variety_quantity_wrapper hjnjnjf__jerrrewe h-100 d-flex justify-content-between">
+                        <div class="duihnhierwweduie_fnjtr" id="all_quantity">
+                            <h4>Select Quantity: <span>250 g</span></h4>
+                        
+                            <div class="oijdoejirer mt-2">
+                                <input type="radio" class="form-check-input" id="android3" name="quantity" value="1" checked="checked">
+                                <label for="android3">1 L</label>
+                                
+                                <input type="radio" class="form-check-input" id="android4" name="quantity" value="500">
+                                <label for="android4">500 ml</label>
+                            </div>
+                        </div>
+                        <div id="modal_add_cart_div">
+                                                            <a href="javascript:void(0);" onclick="checklog()">
+                                    <button type="button" class="btn btn-main">Add To Cart</button>
+                                </a>
+                                                    </div>
+                        
+                    </div>
+                </div>
+                <input type="hidden" id="product_id_modal" value="">
+                <input type="hidden" id="varient_id_modal" value="">
+            </div>
+        </div>
+    </div>
+    
+    <!--select option modal end-->
+    
+    
+    
+    
+    
+    <!--select option loader start-->
+    
+    <div class="select-option-modal bg-white w-100 h-100 position-fixed" id="body_loader" style="display:none;">
+        <div class="select-option-loader">
+            <div class="loader-mask">
+                <div class="loader">
+                    <div></div>
+                    
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--select option loader end-->
+
+
+
+
+
+    <!--zip modal start-->
+    
+    <div class="zip-modal-wrapper w-100 h-100 hide-zip-modal-wrapper position-fixed" id="zip-modal-wrapper">
+        <div class="zip-modal-container overflow-hidden position-absolute">
+            <div class="zip-modal-header d-flex align-items-center justify-content-between p-3">
+                <h6 class="mb-0">Check Location Availability</h6>
+                
+                <i class="bi bi-x-lg" id="zip-modal-close-btn"></i>
+            </div>
+            
+            <div class="zip-modal-body bg-white p-3">
+                <p class="mb-1">Type your delivery location to check for product availability and delivery options</p>
+                                     <a href="https://harvest.workstream.club/login"><button class="btn w-100 btn-main my-2">Sign in to see details</button></a>
+                                <div class="d-flex align-items-center justify-content-center">
+                    <hr class="w-100">
+                    
+                    <p class="mb-0 mx-1">or</p>
+                    
+                    <hr class="w-100">
+                </div>
+                
+                <div class="zip-code-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12">
+                            <div class="d-flex align-items-center">
+                                <input class="form-control py-2" id="pincode_modal" name="pincode" placeholder="Enter Pincode" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
+                        
+                                <button class="btn btn-main py-2"><span class="idejnurerer" onclick="pincode_check_modal()">Check</span> <span class="ihdinf d-none"><i class="bi bi-arrow-right"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <span class="not_valid_error_msg_modal text-center" style="color:red; display:none;">
+                        <p class="mb-0 mt-2" style="color:red;"><i class="bi me-1 bi-ban"></i> Product Delivery not available in this area!</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--zip modal end-->
+
+
+
+
+<script>
+document.getElementById("pincode_modal").addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        // Check if Enter key is pressed
+        pincode_check_modal();
+        // Trigger button click
+    }
+});
+</script>
+
+<script>
+    function pincode_check_modal(){
+        var pincode = $('#pincode_modal').val();
+
+        if(pincode != ''){
+            $.ajax({
+                url:"https://harvest.workstream.club/check-pincode-availability",
+                method:"get",
+                data:{
+                     _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                    pincode:pincode,
+                },
+                beforeSend: function() {
+                    $('#body_loader').show();
+                },
+                success:function(response){
+                    $('#body_loader').hide();
+               
+                    if(response.product_unavailable == 1){
+                        $('.not_valid_error_msg_modal').hide();
+                        $('#zip-modal-close-btn').trigger('click');
+                        
+                        var pincode_html = `<span class="pin-highlight">Delivery to</span> <span class="pin-code-number">${pincode}</span>`; 
+                        
+                        $('#pincode_header').html(pincode_html);
+                        
+                    }else if(response.product_unavailable == 0){
+                        $('.not_valid_error_msg_modal').show();
+                    }
+                    
+                }
+            });
+        }else{
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true
+            };
+            toastr.error('please enter pincode !!');
+        }
+    }
+</script>
+
+<script>
+    function cart_count(){
+        $('#cart-offset-menu-close').click();
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true
+        };
+        toastr.error('please add product in cart to process');
+    }
+</script>
+
+
+<script>
+    function fetch_product_verient(product_id){
+        $.ajax({
+            url:"https://harvest.workstream.club/get-product-verient",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                product_id:product_id,
+            },
+            beforeSend: function() {
+                $('#body_loader').show();
+            },
+            success:function(response){
+
+            $('#body_loader').hide();
+
+               if(response.status == 'success'){
+                   
+                   var varient_data = response.verient_data;
+                   var product_data = response.product_data;
+                   
+                   var user_logged_in = false; 
+                   
+                  var quantity_button = '';
+                    $.each(varient_data, function (key, varient_dataval) {
+                        
+                        let isChecked = (key === 0) ? 'checked' : '';
+                
+                        quantity_button += `<input type="radio" class="form-check-input" id="android${varient_dataval.id}" 
+                                            name="quantity" value="${varient_dataval.product_quantity}" onclick="get_price(${varient_dataval.id})" ${isChecked}>
+                                <label for="android${varient_dataval.id}">${varient_dataval.product_quantity} ${varient_dataval.product_unit}</label>`;
+                                
+                       
+                    });
+                    
+                    
+                    var product_image_html = `<a href="/view-product/${product_data.product_slug}">
+                                    <img src="/dynamic/${product_data.product_image}" alt="">
+                                </a>`;
+                                
+                    var price_div_html = `<h4 class="mb-0 me-3">Rs. ${product_data.selling_price}</h4>
+                                        <span>Rs. ${product_data.product_mrp}</span>`;
+                                        
+                    var all_quantity_html = `<h4 id="select_quantity">Select Quantity: <span>${product_data.product_quantity} ${product_data.product_unit}</span></h4>
+                        
+                            <div class="oijdoejirer mt-2" id="quanity_div">
+                                ${quantity_button}
+                            </div>`;
+                            
+                            
+                    if(product_data.product_stock > 0){
+                        if(user_logged_in == true) {
+                            var addCart_button_html = `<button type="button" class="btn w-100 mt-2 btn-main" onclick="modal_add_cart()"><i class="bi me-2 bi-bag-check"></i>Add To Cart</button>`;
+                        }else{
+                            var addCart_button_html = `<a href="javascript:void(0);" onclick="checklog()">
+                                        <button type="button" class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i>Add To Cart</button>
+                                    </a>`;
+                        }
+                    }else{
+                        var addCart_button_html = `<button class="btn w-100 mt-2 btn-main outOfStock"><i class="bi me-2 bi-bag-x"></i> Out Of Stock</button>`;
+                    }
+                            
+                        
+           
+                    
+                    $('#product_image').html(product_image_html);
+                    $('#product_name').text(product_data.product_name);
+                    $('#prive_div').html(price_div_html);
+                    $('#all_quantity').html(all_quantity_html);
+                    
+                    
+                    
+                    $('#product_id_modal').val(product_id);
+                    $('#varient_id_modal').val(product_data.id);
+                    
+                    $('#modal_add_cart_div').html(addCart_button_html);
+            
+                
+               }
+        
+            }
+        });
+    }
+    
+    function get_price(verient_id){
+        $.ajax({
+            url:"https://harvest.workstream.club/product-description-price-change",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                verient_id:verient_id,
+            },
+            beforeSend: function() {
+                $('#body_loader').show();
+            },
+            success:function(response){
+                $('#body_loader').hide();
+                
+                var user_logged_in = false; 
+                
+                var verient_data = response.verient_data;
+                
+                var priceHtml = `<h4 class="mb-0 me-3">Rs. ${verient_data.selling_price}</h4>
+                                    <span>Rs. ${verient_data.product_mrp}</span>`;
+                                    
+                var select_quantityHtml = `Select Quantity: <span>${verient_data.product_quantity} ${verient_data.product_unit}</span>`;
+                
+                
+                if(verient_data.product_stock > 0){
+                    if(user_logged_in == true) {
+                        var addCart_button_html = `<button type="button" class="btn w-100 mt-2 btn-main" onclick="modal_add_cart()"><i class="bi me-2 bi-bag-check"></i>Add To Cart</button>`;
+                    }else{
+                        var addCart_button_html = `<a href="javascript:void(0);" onclick="checklog()">
+                                    <button type="button" class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i>Add To Cart</button>
+                                </a>`;
+                    }
+                }else{
+                    var addCart_button_html = `<button class="btn w-100 mt-2 btn-main outOfStock"><i class="bi me-2 bi-bag-x"></i> Out Of Stock</button>`;
+                }
+                
+                $('#prive_div').html(priceHtml);
+                $('#select_quantity').html(select_quantityHtml);
+                $('#modal_add_cart_div').html(addCart_button_html);
+                
+                $('#varient_id_modal').val(verient_id);
+            }
+        });
+    }
+    
+    function modal_add_cart(){
+        
+        var product_id_modal = $('#product_id_modal').val();
+        var varient_id_modal = $('#varient_id_modal').val();
+        var quantity = $('#show-count-number').val();
+        
+        $.ajax({
+            url:"https://harvest.workstream.club/user-addToCart-Modal",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                product_id_modal:product_id_modal,
+                varient_id_modal:varient_id_modal,
+                quantity:quantity,
+            },
+            beforeSend: function() {
+                $('#body_loader').show();
+            },
+            success:function(response){
+
+                $('#body_loader').hide();
+                
+                var status = response.status;
+                
+                if(response.status == "success"){
+                    $('#s-o-modal-close-icon-btn').trigger('click');
+                    $('#cart-basket').trigger('click');
+                    
+                    
+                    var all_cart_data = response.user_cartlist;
+                    
+                    var subtotal = 0;
+                    $('#fetch_cart_value').html('');
+                    var product_stock_array = [];
+                    
+                    $.each(all_cart_data, function (key, all_cart_dataval) {
+                        
+                        product_stock_array.push(all_cart_dataval.product_stock);
+                        
+                        var cart_value = `<div class="diewhrewr_product py-3 px-4">
+                                   <div class="row align-items-center">
+                                       <div class="col-3">
+                                          <div class="doiewrjfewrewr">
+                                                <a href="/view-product/${all_cart_dataval.product_slug}">
+                                                    <img src="/dynamic/${all_cart_dataval.product_image}" alt="">
+                                                </a>
+                                          </div>
+                                       </div>
+                                       
+                                       <div class="col-8">
+                                            <div class="dasdcerffdsfr">
+                                                <h4 class="mb-1">${all_cart_dataval.product_name} - ${all_cart_dataval.product_quantity} ${all_cart_dataval.product_unit}</h4>
+                                              
+                                                <div class="bder_price d-flex align-items-center">
+                                                    <span style="margin-right: 7px !important; font-size: 14px; color: var(--main-light-grey-text-color); text-decoration: auto;">${all_cart_dataval.quantity} &#x2716;</span>
+                                                    <h4 class="mb-0 me-3">Rs. ${all_cart_dataval.selling_price}</h4>
+                        
+                                                    <span>Rs. ${all_cart_dataval.product_mrp}</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       
+                                       <div class="col-1">
+                                           <div class="duiehrewr_inner">
+                                                <a href="/delete-user-cart/${all_cart_dataval.id}">
+                                                   <i class="bi bi-trash3"></i>
+                                                </a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>`;
+                                
+                            subtotal += parseFloat(all_cart_dataval.selling_price) * all_cart_dataval.quantity;
+                       
+                       $('#fetch_cart_value').append(cart_value);
+                    });
+                    
+                    var total_price_html = `<p class="mb-0">Subtotal</p>
+                
+                            <p class="mb-0">Rs. ${subtotal.toFixed(2)}⧸-<span></span></p>`;
+                    
+                    $('#fetch_total_price').html(total_price_html);
+                    
+                    var user_logged_in = false; 
+
+                    if(user_logged_in == true){
+                        if(all_cart_data.length > 0){
+                            var cart_button_section_html = `<a href="https://harvest.workstream.club/cart"><button class="btn nkjdsakjdsnkjdnkj_btn dsscretrttttwqe btn-main w-100 py-3">View Cart</button> </a>`;
+                        }else{
+                            var cart_button_section_html = `<a href="javascript:void(0);" onclick="cart_count()"><button class="btn nkjdsakjdsnkjdnkj_btn dsscretrttttwqe btn-main w-100 py-3">View Cart</button></a>`;
+                        }
+                    }
+                    
+                    if(user_logged_in == true){
+                        if(all_cart_data.length > 0){
+                            if(product_stock_array.includes(0)){
+                                var checkout_button_section_html =`<a href="javascript:void(0);" onclick="product_stock_msg()"><button type="button" class="btn nkjdsikjdsaije_btn dsscretrttttwqe btn-main w-100 py-3">Checkout</button></a>`;
+                            }else{
+                                var checkout_button_section_html = `<a href="https://harvest.workstream.club/checkout"><button type="button" class="btn nkjdsikjdsaije_btn dsscretrttttwqe btn-main w-100 py-3">Proceed to Checkout</button></a>`;
+                            }
+                        }else{
+                            var checkout_button_section_html = `<a href="javascript:void(0);" onclick="cart_count()"><button class="btn nkjdsikjdsaije_btn dsscretrttttwqe btn-main w-100 py-3">Proceed to Checkout</button></a>`;
+                        }
+                    }
+          
+                    
+                    $('#cart_button_section').html(cart_button_section_html);
+                    $('#checkout_button_section').html(checkout_button_section_html);
+                    
+                }else{
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.error(response.message);
+                }
+            }
+        });
+    }
+</script>
+
+<script>
+    function view_cart_response(response){
+        $('#cart-basket').trigger('click');
+        
+        var all_cart_data = response.user_cartlist;
+                    
+        var subtotal = 0;
+        $('#fetch_cart_value').html('');
+        var product_stock_array = [];
+        $.each(all_cart_data, function (key, all_cart_dataval) {
+            
+            product_stock_array.push(all_cart_dataval.product_stock);
+            
+            var cart_value = `<div class="diewhrewr_product py-3 px-4">
+                       <div class="row align-items-center">
+                           <div class="col-3">
+                              <div class="doiewrjfewrewr">
+                                    <a href="/view-product/${all_cart_dataval.product_slug}">
+                                        <img src="/dynamic/${all_cart_dataval.product_image}" alt="">
+                                    </a>
+                              </div>
+                           </div>
+                           
+                           <div class="col-8">
+                                <div class="dasdcerffdsfr">
+                                    <h4 class="mb-1">${all_cart_dataval.product_name} - ${all_cart_dataval.product_quantity} ${all_cart_dataval.product_unit}</h4>
+                                  
+                                    <div class="bder_price d-flex align-items-center">
+                                        <span style="margin-right: 7px !important; font-size: 14px; color: var(--main-light-grey-text-color); text-decoration: auto;">${all_cart_dataval.quantity} &#x2716;</span>
+                                        <h4 class="mb-0 me-3">Rs. ${all_cart_dataval.selling_price}</h4>
+            
+                                        <span>Rs. ${all_cart_dataval.product_mrp}</span>
+                                    </div>
+                                </div>
+                           </div>
+                           
+                           <div class="col-1">
+                               <div class="duiehrewr_inner">
+                                    <a href="/delete-user-cart/${all_cart_dataval.id}">
+                                       <i class="bi bi-trash3"></i>
+                                    </a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>`;
+                    
+                subtotal += parseFloat(all_cart_dataval.selling_price) * all_cart_dataval.quantity;
+           
+           $('#fetch_cart_value').append(cart_value);
+        });
+        
+        var total_price_html = `<p class="mb-0">Subtotal</p>
+                <p class="mb-0">Rs. ${subtotal.toFixed(2)}⧸-<span></span></p>`;
+        
+        $('#fetch_total_price').html(total_price_html);
+        
+        
+        var user_logged_in = false; 
+
+        if(user_logged_in == true){
+            if(all_cart_data.length > 0){
+                var cart_button_section_html = `<a href="https://harvest.workstream.club/cart"><button class="btn nkjdsakjdsnkjdnkj_btn dsscretrttttwqe btn-main w-100 py-3">View Cart</button> </a>`;
+            }else{
+                var cart_button_section_html = `<a href="javascript:void(0);" onclick="cart_count()"><button class="btn nkjdsakjdsnkjdnkj_btn dsscretrttttwqe btn-main w-100 py-3">View Cart</button></a>`;
+            }
+        }
+        
+        if(user_logged_in == true){
+            if(all_cart_data.length > 0){
+                if(product_stock_array.includes(0)){
+                    var checkout_button_section_html =`<a href="javascript:void(0);" onclick="product_stock_msg()"><button type="button" class="btn nkjdsikjdsaije_btn dsscretrttttwqe btn-main w-100 py-3">Checkout</button></a>`;
+                }else{
+                    var checkout_button_section_html = `<a href="https://harvest.workstream.club/checkout"><button type="button" class="btn nkjdsikjdsaije_btn dsscretrttttwqe btn-main w-100 py-3">Proceed to Checkout</button></a>`;
+                }
+            }else{
+                var checkout_button_section_html = `<a href="javascript:void(0);" onclick="cart_count()"><button class="btn nkjdsikjdsaije_btn dsscretrttttwqe btn-main w-100 py-3">Proceed to Checkout</button></a>`;
+            }
+        }
+
+        
+        $('#cart_button_section').html(cart_button_section_html);
+        $('#checkout_button_section').html(checkout_button_section_html);
+    }
+</script>
+
+
+
+
+<!--cart offset menu end-->    
+    <!--header end-->
+
+
+
+    <!--category slider start-->
+
+    <div id="fdgguui-wrapper" class="category-product-wrapper-slider position-relative py-3">
+        <div class="dropmove-wrapper">
+            <ul class="dropmove-list">
+                                <li class="dropmove-list-item product-images-wrapper text-center">
+                    <a href="https://harvest.workstream.club/category/dry-fruits-snacks" id="dry-fruits-snacks">
+                        <div class="dropmove-list-preview product_image">
+                            <img src="HarvestTreats_sample_files/FILE1779705837.webp" class="img-fluid" alt="">
+                        </div>
+                        
+                        <div class="dropmove-list-content">
+                            <p class="mb-0">Dry Fruits / Snacks</p>
+                        </div>
+                    </a>
+                </li>
+                                <li class="dropmove-list-item product-images-wrapper text-center">
+                    <a href="https://harvest.workstream.club/category/grocery" id="grocery">
+                        <div class="dropmove-list-preview product_image">
+                            <img src="HarvestTreats_sample_files/FILE1779705865.jpg" class="img-fluid" alt="">
+                        </div>
+                        
+                        <div class="dropmove-list-content">
+                            <p class="mb-0">Grocery</p>
+                        </div>
+                    </a>
+                </li>
+                                <li class="dropmove-list-item product-images-wrapper text-center">
+                    <a href="https://harvest.workstream.club/category/healthy-snacks" id="healthy-snacks">
+                        <div class="dropmove-list-preview product_image">
+                            <img src="HarvestTreats_sample_files/FILE1779706794.jpg" class="img-fluid" alt="">
+                        </div>
+                        
+                        <div class="dropmove-list-content">
+                            <p class="mb-0">Healthy Snacks</p>
+                        </div>
+                    </a>
+                </li>
+                                <li class="dropmove-list-item product-images-wrapper text-center">
+                    <a href="https://harvest.workstream.club/category/dry-fruits" id="dry-fruits">
+                        <div class="dropmove-list-preview product_image">
+                            <img src="HarvestTreats_sample_files/FILE1779706819.jpg" class="img-fluid" alt="">
+                        </div>
+                        
+                        <div class="dropmove-list-content">
+                            <p class="mb-0">Dry Fruits</p>
+                        </div>
+                    </a>
+                </li>
+                                <li class="dropmove-list-item product-images-wrapper text-center">
+                    <a href="https://harvest.workstream.club/category/seeds" id="seeds">
+                        <div class="dropmove-list-preview product_image">
+                            <img src="HarvestTreats_sample_files/FILE1779706970.webp" class="img-fluid" alt="">
+                        </div>
+                        
+                        <div class="dropmove-list-content">
+                            <p class="mb-0">Seeds</p>
+                        </div>
+                    </a>
+                </li>
+                            </ul>
+            <div class="dropmove-nav in-disable">
+                <div class="nav-prev in-disable">prev</div>
+                <div class="nav-next in-disable">next</div>
+            </div>
+        </div>
+    </div>
+    
+    <!--category slider end-->
+    
+
+
+
+
+
+    <!--banner start-->
+
+    <div class="banner py-4">
+        <div class="container-fluid position-relative px-5">
+            <div id="banner-container">
+                                <img src="HarvestTreats_sample_files/FILE_rYCpzz7KKX.png" class="fade-image img-fluid active" alt="">
+                            </div>
+            
+            <div id="dots-container" class="position-absolute">
+                                <span class="banner-dot active" data-index="0"></span>
+                            </div>
+        </div>
+    </div>
+    
+    <!--banner end-->
+
+
+
+
+
+
+    <!--middle start-->
+
+    <main>
+        <section class="section-1 py-3">
+            <div class="container-fluid px-5">
+                <div class="row">
+                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_LfxXZ2Wepc.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_WmRgS2zo8W.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_klX7L15xdQ.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_659ij65eJG.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </section>
+
+        <section class="section-2 py-3">
+            <div class="container-fluid px-5">
+                <div class="diewrer d-flex align-items-center">
+                    <h2>Harvest Treats Bestsellers</h2>
+
+                    <a href="https://harvest.workstream.club/all-products"><h6 class="ms-5">View All <i class="bi ms-3 bi-arrow-right"></i></h6></a>
+                </div>
+
+                <div class="udguiniewurerr_products_wrapper mt-2">
+                    <div class="row">
+                        
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/makhana"><img src="HarvestTreats_sample_files/FILE1779709125.png" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_24">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/makhana"><h4>Makhana</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>315.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>350.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_24">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/pure-ghee"><img src="HarvestTreats_sample_files/FILE1779709207.png" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_25">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/pure-ghee"><h4>Pure Ghee</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>270.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>300.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_25">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/trail-mix"><img src="HarvestTreats_sample_files/FILE1779709270.png" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_26">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/trail-mix"><h4>Trail Mix</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>720.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>800.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_26">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/americano-almond"><img src="HarvestTreats_sample_files/FILE1779709991.png" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_27">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/americano-almond"><h4>Americano Almond</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>270.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>300.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_27">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/premium-cashew"><img src="HarvestTreats_sample_files/FILE1779710079.png" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_28">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/premium-cashew"><h4>Premium Cashew</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>270.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>300.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_28">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/mix-seed-roasted"><img src="HarvestTreats_sample_files/FILE1779710106.png" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_29">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/mix-seed-roasted"><h4>Mix Seed Roasted</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>180.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>200.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_29">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/pumpkin-seed-raw"><img src="HarvestTreats_sample_files/FILE1779708722.jpg" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">15% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_30">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/pumpkin-seed-raw"><h4>Pumpkin Seed Raw</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>170.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>200.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_30">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/flax-seed"><img src="HarvestTreats_sample_files/FILE1779708967.jpg" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">15% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_31">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/flax-seed"><h4>Flax Seed</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>170.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>200.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_31">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/sunflower-seed-raw"><img src="HarvestTreats_sample_files/FILE1779708819.webp" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">10% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_32">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/sunflower-seed-raw"><h4>Sunflower Seed Raw</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>135.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>150.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_32">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                              
+                                                <div class="col-lg-2 mb-4">
+                            <div class="iudhuiewr_inner overflow-hidden">
+                                <div class="iudhiueherr overflow-hidden position-relative">
+                                    <a href="https://harvest.workstream.club/view-product/sesame-seed-raw"><img src="HarvestTreats_sample_files/FILE1779708900.jpg" alt=""></a>
+
+                                    <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                        <div class="iherewrer p-1">
+                                            <p class="mb-0">20% OFF</p>
+                                        </div>
+
+                                       <div class="iudhewr p-2" id="wishlist_icon_fetch_bestSeller_33">
+                                                                                           <a href="javascript:void(0);" onclick="checklog()">
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uidnbjeuwrerer_wrapper p-2">
+                                    <a href="https://harvest.workstream.club/view-product/sesame-seed-raw"><h4>Sesame Seed Raw</h4></a>
+
+                                    <div class="ideniuwr d-flex align-items-center">
+                                        <div></div>
+
+                                        <div class="ms-2">i</div>
+                                    </div>
+
+                                    <div class="uiewr_price mt-3 d-flex align-items-center">
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>80.00</span></h5>
+
+                                        <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>100.00</span></h5>
+                                    </div>
+                                </div>
+                                <div class="nkjkndfjsdfsf" id="cart_icon_fetch_bestSeller_33">
+                                    
+                                    
+                                                                        
+                                                                        
+                        <a href="javascript:void(0);" onclick="checklog()">
+                                                    <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                </a>
+                                                                        
+                                                                        
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2 py-3">
+            <div class="container-fluid px-5">
+                <div class="diewrer d-flex align-items-center">
+                    <h2>Weekly Deals ( Up to 50% OFF )</h2>
+
+                   <a href="https://harvest.workstream.club/all-products"><h6 class="ms-5">View All <i class="bi ms-3 bi-arrow-right"></i></h6></a>
+                </div>
+                
+                <div class="udguiniewurerr_products_wrapper mt-2">
+                    <div class="row">
+                        
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/makhana"><img src="HarvestTreats_sample_files/FILE1779709125.png" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_24">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/makhana"><h4>Makhana</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>315.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>350.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_24">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/pure-ghee"><img src="HarvestTreats_sample_files/FILE1779709207.png" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_25">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/pure-ghee"><h4>Pure Ghee</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>270.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>300.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_25">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/trail-mix"><img src="HarvestTreats_sample_files/FILE1779709270.png" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_26">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/trail-mix"><h4>Trail Mix</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>720.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>800.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_26">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/americano-almond"><img src="HarvestTreats_sample_files/FILE1779709991.png" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_27">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/americano-almond"><h4>Americano Almond</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>270.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>300.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_27">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/premium-cashew"><img src="HarvestTreats_sample_files/FILE1779710079.png" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_28">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/premium-cashew"><h4>Premium Cashew</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>270.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>300.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_28">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/mix-seed-roasted"><img src="HarvestTreats_sample_files/FILE1779710106.png" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_29">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/mix-seed-roasted"><h4>Mix Seed Roasted</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>180.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>200.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_29">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/pumpkin-seed-raw"><img src="HarvestTreats_sample_files/FILE1779708722.jpg" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">15% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_30">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/pumpkin-seed-raw"><h4>Pumpkin Seed Raw</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>170.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>200.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_30">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/flax-seed"><img src="HarvestTreats_sample_files/FILE1779708967.jpg" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">15% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_31">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/flax-seed"><h4>Flax Seed</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>170.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>200.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_31">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/sunflower-seed-raw"><img src="HarvestTreats_sample_files/FILE1779708819.webp" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">10% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_32">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/sunflower-seed-raw"><h4>Sunflower Seed Raw</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>135.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>150.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_32">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                                                                <div class="col-lg-2 mb-4">
+                                <div class="iudhuiewr_inner overflow-hidden">
+                                    <div class="iudhiueherr overflow-hidden position-relative">
+                                        <a href="https://harvest.workstream.club/view-product/sesame-seed-raw"><img src="HarvestTreats_sample_files/FILE1779708900.jpg" alt=""></a>
+    
+                                        <div class="dewihuirewr w-100 d-flex align-items-center justify-content-between position-absolute">
+                                            <div class="iherewrer p-1">
+                                                <p class="mb-0">20% OFF</p>
+                                            </div>
+    
+                                           <div class="iudhewr p-2" id="wishlist_icon_fetch_deals_33">
+                                                                                                   <a href="javascript:void(0);" onclick="checklog()">
+                                                        <i class="bi bi-heart"></i>
+                                                    </a>
+                                                                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="uidnbjeuwrerer_wrapper p-2">
+                                        <a href="https://harvest.workstream.club/view-product/sesame-seed-raw"><h4>Sesame Seed Raw</h4></a>
+    
+                                        <div class="ideniuwr d-flex align-items-center">
+                                            <div></div>
+    
+                                            <div class="ms-2">i</div>
+                                        </div>
+    
+                                        <div class="uiewr_price mt-3 d-flex align-items-center">
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>80.00</span></h5>
+    
+                                            <h5 class="mb-0"><i class="fa-solid fa-indian-rupee-sign"></i> <span>100.00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="nkjkndfjsdfsf" id="cart_icon_fetch_deals_33">
+                                        
+                                                                        
+        
+                                                                        
+                                                                        <a href="javascript:void(0);" onclick="checklog()">
+                                                        <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                                                    </a>
+                                                                        
+                                                                
+                                                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!--banner start-->
+
+    
+    
+    <!--banner end-->
+
+        
+
+        <section class="section-4 py-5">
+            <div class="container-fluid px-5">
+                <h6 class="align-items-center justify-content-between py-2 px-3">
+                    <i class="bi bi-star-fill"></i>
+
+                    <span>Harvest Treats</span>
+
+                    <i class="bi bi-star-fill"></i>
+                </h6>
+
+                <h2><strong>Health is our culture &amp;</strong></h2><h2><strong>Happiness is our tradition</strong></h2>
+
+                <div class="uidnberwrer mt-3">
+                   <p>Did you ever imagine that the freshest 
+of&nbsp;fruits and vegetables, top-quality pulses and food 
+grains,&nbsp;dairy products, and hundreds of branded items could be 
+handpicked and delivered to your home, all at the click of a button? In 
+today's fast-paced world, bigbasket.com, India's pioneering online 
+grocery store, continues to bring a staggering array of over 40,000 
+products from more than 1,000 brands to the doorsteps of over 10 million
+ satisfied customers. From essential household cleaning products to the 
+latest beauty and makeup trends, bigbasket remains your one-stop shop 
+for daily needs.</p><p>In these times, we've eliminated the stress 
+associated with shopping for daily essentials. You can now effortlessly 
+order all your household products and groceries online. Plus, the added 
+convenience of finding all your requirements at a single source, coupled
+ with substantial savings, demonstrates that bigbasket, India's largest 
+online supermarket, has transformed the way we shop for groceries. 
+Online grocery shopping has become second nature. And when it comes to 
+freshness, whether it's fruits and vegetables or dairy and meat, we've 
+got you covered! Easily obtain fresh eggs, meat, fish, and more with 
+just a few clicks.</p><p>We now serve 300+ cities and towns across India
+ and ensure swift delivery times, guaranteeing that all your 
+groceries,&nbsp;snacks and branded foods&nbsp;reach you on time.</p><p>Slotted
+ Delivery: Choose the most convenient delivery slot to receive your 
+groceries, ranging from early morning delivery for early birds to 
+late-night delivery for those on the night shift. bigbasket caters to 
+every schedule.</p>
+                </div>
+
+                <div class="diwherhwer mt-5">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="dewurewrewr_left">
+                            <i class="bi me-3 bi-facebook"></i>
+
+                            <i class="bi me-3 bi-twitter"></i>
+
+                            <i class="bi me-3 bi-youtube"></i>
+
+                            <i class="bi me-3 bi-instagram"></i>
+                        </div>
+
+                        <div class="dewrehwrewr_right text-right">
+                            <a href="https://harvest.workstream.club/about-us"><button class="btn btn-main py-3">About us</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-1 section-5 py-3">
+            <div class="container-fluid position-relative overflow-hidden px-5">
+                <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_LfxXZ2Wepc.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_WmRgS2zo8W.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_klX7L15xdQ.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="duiehwr_inner">
+                            <img src="HarvestTreats_sample_files/FILE_659ij65eJG.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </section>
+
+        <section class="section-6 py-5">
+            <div class="container-fluid px-5">
+                <ul class="mb-0 ps-0 d-flex align-items-center justify-content-between">
+                    
+                                        <li><img src="HarvestTreats_sample_files/FILE_j3A7yBuvvZ.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_WyIzQDdb85.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_8Em6F73iFZ.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_xU6ZbDJSxu.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_rwVFTJpDrd.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_kxLjzPis6c.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_qJIRNUe7vw.png" alt=""></li>
+                                        <li><img src="HarvestTreats_sample_files/FILE_fGvkntJ0at.png" alt=""></li>
+                                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--middle end-->
+    
+    
+    
+
+    <!--footer start-->
+
+    <footer class="mt-5">
+    <div class="iudewuirewr_wrapper">
+        <div class="container-fluid px-5">
+            <div class="jdmewirjoewrr d-flex align-items-center justify-content-between p-5">
+                <h3 class="mb-0">+91-40-12345589, +91-99128 99128</h3>
+
+                <div class="duiewhrewuir text-right d-flex align-items-center">    
+                    <p class="mb-0 me-3">Join our mailing list</p>  
+                    
+                    <a href="https://harvest.workstream.club/register">
+                        <div class="iudnjieuirr_Btn bg-white d-flex align-items-center overflow-hidden px-3 py-2">
+                            <p class="position-relative mb-0">Get Started</p>
+                            <img src="HarvestTreats_sample_files/footerarrow.png" class="ms-4" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>               
+        </div>
+    </div>
+
+    <div class="footer-nav pb-5 px-5">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="iuhnuiuhuwee_inner">
+                        <img src="HarvestTreats_sample_files/image%20-%202024-11-22T205337.424.png" class="logo img-fluid mb-3" alt="">
+                        <p>Buy fresh and healthy groceries from Harvest Treats at a reasonable price. Your one-stop grocery destination online. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-4">
+                    <div class="iuhnuiuhuwee_inner">
+                        <h4>Popular Category</h4>
+
+                        <ul class="mb-0 ps-0">
+                             
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-4">
+                    <div class="iuhnuiuhuwee_inner">
+                        <h4>Useful Links</h4>
+
+                        <ul class="mb-0 ps-0">
+                            <li><a href="https://harvest.workstream.club/">Home</a></li>
+                            
+                            <li><a href="https://harvest.workstream.club/blog">Blogs</a></li>
+                            
+                            <li><a href="https://harvest.workstream.club/about-us">About Us</a></li>
+                            
+                            <li><a href="https://harvest.workstream.club/contact-us">Contact Us</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="iuhnuiuhuwee_inner">
+                        <h4>Let's do it!</h4>
+
+                        <div class="duewrniweurewr mb-5">
+                            <img src="HarvestTreats_sample_files/ff.png" alt="">
+
+                            <!--<img src="/frontpanel/images/ws.png" alt="">-->
+
+                            <!--<img src="/frontpanel/images/cf.png" alt="">-->
+
+                            <img src="HarvestTreats_sample_files/af.png" alt="">
+
+                            <img src="HarvestTreats_sample_files/if.png" alt="">
+
+                            <!--<img src="/frontpanel/images/fif.png" alt="">-->
+                        </div>
+
+                        <h4>Subscribe</h4>
+
+                        <!--<p>Join our mailing list and stay updated on Saampradayam Inc.</p>-->
+                    <form action="/store-subscriber" method="post">
+                        <input type="hidden" name="_token" value="v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde" autocomplete="off">                        <div class="djbeuwyrewre d-flex align-items-center position-relative">
+                            <input type="email" name="email" class="form-control py-2" placeholder="Enter your email Address" required="">
+
+                            <button type="submit" class="btn ms-1 py-2 btn-main">Subscribe</button>
+                        </div>
+                    </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom pt-3 pb-4">
+        <div class="container-fluid px-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <ul class="mb-0 ps-0">
+                    <a href="https://harvest.workstream.club/privacy-policy"><li>Privacy Policy</li></a>
+
+                    <a href="https://harvest.workstream.club/terms-conditions"><li>Terms of Use</li></a>
+
+                    <a href="https://harvest.workstream.club/sales-refunds"><li>Sales and Refunds</li></a>
+
+                    <a href="https://harvest.workstream.club/legal"><li>Legal</li></a>
+
+                    <!--<li>Site Map</li>-->
+                </ul>
+
+               <p class="mb-0">© 2026 Harvest Treats. All Rights Reserved.</p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<!--scroll to top button start-->
+
+<a class="scroll-top" id="button"></a>
+
+<!--scroll to top button end-->
+
+
+
+    
+    <!--footer end-->
+
+
+    <script src="HarvestTreats_sample_files/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="HarvestTreats_sample_files/intlTelInput.min.js"></script>
+    
+
+    <script src="HarvestTreats_sample_files/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" type="text/css" href="HarvestTreats_sample_files/toastr.min.css">
+<!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.all.min.js"></script>-->
+<!--<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.min.css" rel="">-->
+<script src="HarvestTreats_sample_files/toastr.min.js"></script>
+<script src="HarvestTreats_sample_files/global.js"></script>
+<script src="HarvestTreats_sample_files/custom.js"></script>
+<script src="HarvestTreats_sample_files/slider.js"></script>
+
+ <script>
+    
+    
+  
+</script>    
+    
+
+<script>
+    function product_wishlist_bestSeller(product_id){
+        $.ajax({
+            url:"https://harvest.workstream.club/user-wishlist-update",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                product_id:product_id,
+            },
+            beforeSend: function() {
+                // $('body').css('opacity', '0.5');
+                $('#body_loader').show();
+            },
+            success:function(res){
+               //console.log(res);
+                // $('body').css('opacity', '1.0');
+                $('#body_loader').hide();
+                
+                if(res.status == "success"){
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.success(res.message);
+                }else{
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.error(res.message);
+                }
+                
+                var user_logged_in = false; 
+                
+                if (user_logged_in == false) {
+                    
+                    heart_button = `<a href="javascript:void(0);" onclick="checklog()">
+                                        <i class="bi bi-heart"></i>
+                                    </a>`;
+                    
+                }else if(res.wishlist_data == 0) {
+                    heart_button = `<a href="javascript:void(0);"  onclick="product_wishlist_bestSeller(${product_id})">
+                                        <i class="bi bi-heart"></i>
+                                    </a>`;
+                }else if(res.wishlist_data == 1){
+                    heart_button = `<a href="javascript:void(0);" onclick="product_wishlist_bestSeller(${product_id})">
+                                        <i class="bi bi-heart-fill" style="color:#e91002;"></i>
+                                    </a>`;
+                }
+                
+                
+                $('#wishlist_icon_fetch_bestSeller_'+product_id).html(heart_button);
+                $('#wishlist_icon_fetch_deals_'+product_id).html(heart_button);
+        
+            }
+        });
+    }
+    function product_wishlist_deals(product_id){
+        $.ajax({
+            url:"https://harvest.workstream.club/user-wishlist-update",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                product_id:product_id,
+            },
+            beforeSend: function() {
+                // $('body').css('opacity', '0.5');
+                $('#body_loader').show();
+            },
+            success:function(res){
+               //console.log(res);
+                // $('body').css('opacity', '1.0');
+                $('#body_loader').hide();
+                
+                if(res.status == "success"){
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.success(res.message);
+                }else{
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.error(res.message);
+                }
+                
+                var user_logged_in = false; 
+                
+                if (user_logged_in == false) {
+                    
+                    heart_button = `<a href="javascript:void(0);" onclick="checklog()">
+                                        <i class="bi bi-heart"></i>
+                                    </a>`;
+                    
+                }else if(res.wishlist_data == 0) {
+                    heart_button = `<a href="javascript:void(0);"  onclick="product_wishlist_deals(${product_id})">
+                                        <i class="bi bi-heart"></i>
+                                    </a>`;
+                }else if(res.wishlist_data == 1){
+                    heart_button = `<a href="javascript:void(0);" onclick="product_wishlist_deals(${product_id})">
+                                        <i class="bi bi-heart-fill" style="color:#e91002;"></i>
+                                    </a>`;
+                }
+                
+                
+                $('#wishlist_icon_fetch_deals_'+product_id).html(heart_button);
+                $('#wishlist_icon_fetch_bestSeller_'+product_id).html(heart_button);
+                
+            }
+        });
+    }
+</script> 
+
+<script>
+    function add_to_cart_bestSeller(product_id, verient_id){
+        $.ajax({
+            url:"https://harvest.workstream.club/user-product-addCart",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                product_id:product_id,
+                verient_id:verient_id,
+            },
+            beforeSend: function() {
+                // $('body').css('opacity', '0.5');
+                $('#body_loader').show();
+            },
+            success:function(response){
+               //console.log(res);
+                // $('body').css('opacity', '1.0');
+                $('#body_loader').hide();
+                
+                var status = response.status;
+                
+                if(response.status == "success"){
+                    view_cart_response(response);
+                }else{
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.error(response.message);
+                }
+                
+                
+                // var user_logged_in = false; 
+                
+                // if (user_logged_in == false) {
+                    
+                //     cart_button = `<a href="javascript:void(0);" onclick="checklog()">
+                //                         <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                //                     </a>`;
+                    
+                // }else if(response.cart_data == 0) {
+                //     cart_button = `<a href="javascript:void(0);" onclick="add_to_cart_bestSeller(${product_id})">
+                //                         <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                //                     </a>`;
+                // }else if(response.cart_data == 1){
+                //     cart_button = `<a href="/cart/">
+                //                         <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Go To Cart</button>
+                //                   </a>`;
+                // }
+           
+                
+                // $('#cart_icon_fetch_bestSeller_'+product_id).html(cart_button);
+                // $('#cart_icon_fetch_deals_'+product_id).html(cart_button);
+        
+            }
+        });
+    }
+    function add_to_cart_deals(product_id, verient_id){
+        $.ajax({
+            url:"https://harvest.workstream.club/user-product-addCart",
+            method:"post",
+            data:{
+                 _token: "v8QOKH0O7x2BHJ2SlNdulyJM7O5qQ4wU06aQ8yde",
+                product_id:product_id,
+                verient_id:verient_id,
+            },
+            beforeSend: function() {
+                // $('body').css('opacity', '0.5');
+                $('#body_loader').show();
+            },
+            success:function(response){
+               //console.log(res);
+                // $('body').css('opacity', '1.0');
+                $('#body_loader').hide();
+                
+                var status = response.status;
+                
+                if(response.status == "success"){
+                    view_cart_response(response);
+                }else{
+                    toastr.options = {
+                        "closeButton": true,
+                        "progressBar": true
+                    };
+                    toastr.error(response.message);
+                }
+                
+                
+               
+                
+                // var user_logged_in = false; 
+                
+                // if (user_logged_in == false) {
+                    
+                //     cart_button = `<a href="javascript:void(0);" onclick="checklog()">
+                //                         <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                //                     </a>`;
+                    
+                // }else if(response.cart_data == 0) {
+                //     cart_button = `<a href="javascript:void(0);" onclick="add_to_cart_deals(${product_id})">
+                //                         <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Add To Cart</button>
+                //                     </a>`;
+                // }else if(response.cart_data == 1){
+                //     cart_button = `<a href="/cart/">
+                //                         <button class="btn w-100 mt-2 btn-main"><i class="bi me-2 bi-bag-check"></i> Go To Cart</button>
+                //                   </a>`;
+                // }
+           
+                
+                // $('#cart_icon_fetch_deals_'+product_id).html(cart_button);
+                // $('#cart_icon_fetch_bestSeller_'+product_id).html(cart_button);
+            }
+        });
+    }
+</script>
+
+
+</body></html>
