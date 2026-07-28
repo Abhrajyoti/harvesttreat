@@ -203,7 +203,7 @@ function renderProduct(product) {
         </div>
         <span>${product.discount}% Off</span>
       </div>
-      <button type="button" data-add="${product.id}">Add To Order List</button>
+      <button type="button" data-add="${product.id}">Add to bag</button>
     </div>
   `;
 
@@ -276,7 +276,7 @@ function renderCart() {
   cartTotal.textContent = formatPrice(total);
 
   if (!state.cart.length) {
-    cartItems.innerHTML = "<p>Your Order List Is Empty.</p>";
+    cartItems.innerHTML = "<p>Your bag is waiting for something good.</p>";
     return;
   }
 
@@ -367,7 +367,7 @@ copyOrder.addEventListener("click", async () => {
     await navigator.clipboard.writeText(text);
     copyOrder.textContent = "Copied";
     setTimeout(() => {
-      copyOrder.textContent = "Copy Order List";
+      copyOrder.textContent = "Copy bag to order";
     }, 1400);
   } catch {
     window.prompt("Copy your Harvest Treats Order List:", text);
