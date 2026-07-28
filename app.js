@@ -57,7 +57,7 @@ const products = [
   },
   {
     id: "roasted-mix-seed",
-    name: "Roasted Mix Seed",
+    name: "Roasted Mix Seeds",
     image: "Images/Mix_Seeds_Roasted.jpeg",
     quantity: "200g",
     price: 200,
@@ -67,11 +67,11 @@ const products = [
     filters: ["seeds", "healthy-snacks", "grocery"],
     description: "Roasted mixed seeds for a crunchy snack, salad topping or high-value grocery pantry addition.",
     keywords: ["mix seeds", "mixed seeds", "roasted seeds", "seeds", "healthy snacks", "grocery"],
-    alt: "Harvest Treats Roasted Mix Seed healthy seeds 200g pack"
+    alt: "Harvest Treats Roasted Mix Seeds healthy seeds 200g pack"
   },
   {
     id: "pumpkin-seed",
-    name: "Pumpkin Seed",
+    name: "Pumpkin Seeds",
     image: "Images/Pumpkin_Seeds.jpeg",
     quantity: "200g",
     price: 200,
@@ -81,11 +81,11 @@ const products = [
     filters: ["seeds", "healthy-snacks", "grocery"],
     description: "Pumpkin seeds for breakfast bowls, baking, trail mixes, toppings and everyday healthy snacking.",
     keywords: ["pumpkin seed", "pumpkin seeds", "seeds", "healthy snacks", "grocery"],
-    alt: "Harvest Treats Pumpkin Seed healthy grocery 200g pack"
+    alt: "Harvest Treats Pumpkin Seeds healthy grocery 200g pack"
   },
   {
     id: "sunflower-seed",
-    name: "Sunflower Seed",
+    name: "Sunflower Seeds",
     image: "Images/Sunflower_Seeds.jpeg",
     quantity: "200g",
     price: 150,
@@ -95,7 +95,7 @@ const products = [
     filters: ["seeds", "healthy-snacks", "grocery"],
     description: "Sunflower seeds for light snacking, smoothies, salads, toppings and grocery pantry use.",
     keywords: ["sunflower seed", "sunflower seeds", "seeds", "healthy snacks", "grocery"],
-    alt: "Harvest Treats Sunflower Seed healthy seeds 200g pack"
+    alt: "Harvest Treats Sunflower Seeds healthy seeds 200g pack"
   },
   {
     id: "trail-mix",
@@ -115,15 +115,15 @@ const products = [
     id: "pure-cow-ghee",
     name: "Pure Cow Ghee",
     image: "Images/Pure_Cow_Ghee.jpeg",
-    quantity: "500g",
-    price: 700,
-    discount: 20,
-    discountedPrice: 560,
+    quantity: "250g",
+    price: 300,
+    discount: 10,
+    discountedPrice: 270,
     category: "Ghee",
     filters: ["ghee", "grocery"],
     description: "Pure cow ghee for cooking, sweets, traditional meals and everyday grocery pantry essentials.",
     keywords: ["pure cow ghee", "cow ghee", "ghee", "grocery", "cooking essentials", "pantry"],
-    alt: "Harvest Treats Pure Cow Ghee grocery essential 500g pack"
+    alt: "Harvest Treats Pure Cow Ghee grocery essential 250g pack"
   }
 ];
 

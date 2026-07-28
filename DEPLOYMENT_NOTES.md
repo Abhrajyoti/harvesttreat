@@ -8,15 +8,15 @@ To launch it, point DNS for `www.harvesttreats.com` to the selected static hosti
 
 ## Static Files
 
-Deploy these files and folders together:
+Deploy the contents of the `website/` folder together:
 
-- `index.html`
-- `styles.css`
-- `app.js`
-- `robots.txt`
-- `sitemap.xml`
-- `Logo.jpeg`
-- `Images/`
+- `website/index.html`
+- `website/styles.css`
+- `website/app.js`
+- `website/robots.txt`
+- `website/sitemap.xml`
+- `website/Logo.jpeg`
+- `website/Images/`
 
 ## Contact And Social Links
 
@@ -51,9 +51,9 @@ Current price-list values:
 | Premium Makhana / Fox Nut | 200g | Rs. 350 | 15% | Rs. 297.50 |
 | Americano Almond | 200g | Rs. 300 | 20% | Rs. 240 |
 | Cashew Nuts | 200g | Rs. 300 | 20% | Rs. 240 |
-| Pure Cow Ghee | 500g | Rs. 700 | 20% | Rs. 560 |
-| Roasted Mix Seed | 200g | Rs. 200 | 20% | Rs. 160 |
-| Pumpkin Seed | 200g | Rs. 200 | 20% | Rs. 160 |
-| Sunflower Seed | 200g | Rs. 150 | 20% | Rs. 120 |
+| Pure Cow Ghee | 250g | Rs. 300 | 10% | Rs. 270 |
+| Roasted Mix Seeds | 200g | Rs. 200 | 20% | Rs. 160 |
+| Pumpkin Seeds | 200g | Rs. 200 | 20% | Rs. 160 |
+| Sunflower Seeds | 200g | Rs. 150 | 20% | Rs. 120 |
 | Trail Mix | 500g | Rs. 800 | 20% | Rs. 640 |
 | Dry Dates | 200g | Rs. 80 | 15% | Rs. 68 |
