@@ -133,6 +133,9 @@ const state = {
   cart: []
 };
 
+const MAX_ITEM_QUANTITY = 10;
+const CART_STORAGE_KEY = "harvest-treats-bag";
+
 const productGrid = document.querySelector("#productGrid");
 const resultSummary = document.querySelector("#resultSummary");
 const searchInput = document.querySelector("#searchInput");
@@ -148,6 +151,25 @@ const cartCount = document.querySelector("#cartCount");
 const cartItems = document.querySelector("#cartItems");
 const cartTotal = document.querySelector("#cartTotal");
 const copyOrder = document.querySelector("#copyOrder");
+
+function restoreCart() {
+  try {
+    const savedCart = JSON.parse(localStorage.getItem(CART_STORAGE_KEY));
+    if (!Array.isArray(savedCart)) return [];
+    return savedCart.reduce((cart, item) => {
+      if (!products.some((product) => product.id === item.id)) return cart;
+      const quantity = Math.min(MAX_ITEM_QUANTITY, Math.max(1, Number(item.qty) || 1));
+      cart.push({ id: item.id, qty: quantity });
+      return cart;
+    }, []);
+  } catch {
+    return [];
+  }
+}
+
+function saveCart() {
+  localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(state.cart));
+}
 
 function normalize(value) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -243,16 +265,24 @@ function addToCart(productId) {
   if (!product) return;
   const line = state.cart.find((item) => item.id === productId);
   if (line) {
+    if (line.qty >= MAX_ITEM_QUANTITY) {
+      setCartMessage(`A maximum of ${MAX_ITEM_QUANTITY} ${product.name} can be added to your bag.`);
+      openCart();
+      return;
+    }
     line.qty += 1;
   } else {
     state.cart.push({ id: productId, qty: 1 });
   }
+  setCartMessage("");
+  saveCart();
   renderCart();
   openCart();
 }
 
 function removeFromCart(productId) {
   state.cart = state.cart.filter((item) => item.id !== productId);
+  saveCart();
   renderCart();
 }
 
@@ -260,9 +290,32 @@ function updateCartQuantity(productId, change) {
   const line = state.cart.find((item) => item.id === productId);
   if (!line) return;
 
+  if (change > 0 && line.qty >= MAX_ITEM_QUANTITY) {
+    const product = products.find((item) => item.id === productId);
+    setCartMessage(`A maximum of ${MAX_ITEM_QUANTITY} ${product.name} can be added to your bag.`);
+    return;
+  }
+
   line.qty += change;
   if (line.qty <= 0) removeFromCart(productId);
-  else renderCart();
+  else {
+    setCartMessage("");
+    saveCart();
+    renderCart();
+  }
+}
+
+function setCartMessage(message) {
+  let notice = document.querySelector("#cartMessage");
+  if (!notice) {
+    notice = document.createElement("p");
+    notice.id = "cartMessage";
+    notice.className = "cart-message";
+    notice.setAttribute("aria-live", "polite");
+    cartItems.before(notice);
+  }
+  notice.textContent = message;
+  notice.hidden = !message;
 }
 
 function renderCart() {
@@ -293,7 +346,7 @@ function renderCart() {
         <div class="quantity-control" aria-label="Quantity for ${product.name}">
           <button type="button" data-decrease="${product.id}" aria-label="Decrease quantity of ${product.name}">−</button>
           <span aria-live="polite">${item.qty}</span>
-          <button type="button" data-increase="${product.id}" aria-label="Increase quantity of ${product.name}">+</button>
+          <button type="button" data-increase="${product.id}" aria-label="Increase quantity of ${product.name}" ${item.qty >= MAX_ITEM_QUANTITY ? "disabled" : ""}>+</button>
         </div>
         <button type="button" data-remove="${product.id}">Remove</button>
       </div>
@@ -380,5 +433,6 @@ if (initialSearch) {
   searchInput.value = initialSearch;
 }
 
+state.cart = restoreCart();
 renderProducts();
 renderCart();
