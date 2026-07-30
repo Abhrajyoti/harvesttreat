@@ -415,16 +415,12 @@ cartButton.addEventListener("click", openCart);
 closeCart.addEventListener("click", closeCartPanel);
 
 copyOrder.addEventListener("click", async () => {
-  const text = orderText();
-  try {
-    await navigator.clipboard.writeText(text);
-    copyOrder.textContent = "Copied";
-    setTimeout(() => {
-      copyOrder.textContent = "Copy bag to order";
-    }, 1400);
-  } catch {
-    window.prompt("Copy your Harvest Treats Order List:", text);
+  if (!state.cart.length) {
+    setCartMessage("Add something to your bag before placing an order.");
+    return;
   }
+  const message = `${orderText()}\n\nPlease confirm availability and delivery details.`;
+  window.open(`https://wa.me/919123068708?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
 });
 
 const initialSearch = new URLSearchParams(window.location.search).get("search");
