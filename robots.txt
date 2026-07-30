@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.harvesttreats.com/sitemap.xml
+Sitemap: https://harvesttreat.com/sitemap.xml
