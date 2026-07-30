@@ -49,7 +49,7 @@ Current price-list values:
 
 | Product | Quantity | List Price | Discount | Discounted Price |
 | --- | --- | ---: | ---: | ---: |
-| Premium Makhana / Fox Nut | 200g | Rs. 350 | 15% | Rs. 297.50 |
+| Premium Makhana / Fox Nut | 200g | Rs. 350 | 20% | Rs. 280 |
 | Americano Almond | 200g | Rs. 300 | 20% | Rs. 240 |
 | Cashew Nuts | 200g | Rs. 300 | 20% | Rs. 240 |
 | Pure Cow Ghee | 250g | Rs. 300 | 10% | Rs. 270 |
