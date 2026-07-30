@@ -15,6 +15,7 @@ Deploy the contents of the `website/` folder together:
 - `website/app.js`
 - `website/robots.txt`
 - `website/sitemap.xml`
+- `website/favicon.png`
 - `website/Logo.jpeg`
 - `website/Images/`
 
