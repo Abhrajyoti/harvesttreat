@@ -202,7 +202,7 @@
 
   <header class="site-header">
     <div class="utility-bar">
-      <p>Free delivery on orders above ₹499 &nbsp;•&nbsp; Thoughtful snacking, delivered fresh</p>
+      <p class="utility-message">Free delivery on orders above ₹499 &nbsp;•&nbsp; Thoughtful snacking, delivered fresh</p>
       <div class="utility-links" aria-label="Harvest Treats contact and social links">
         <a href="tel:+919123068708">Call 9123068708</a>
         <a class="social-icon" href="https://wa.me/919123068708" target="_blank" rel="noopener noreferrer" aria-label="Chat With Harvest Treats On WhatsApp">
@@ -233,13 +233,29 @@
       </button>
     </nav>
 
+    <section class="offer-spotlight" aria-labelledby="offerTitle">
+      <div class="offer-copy">
+        <p class="eyebrow">Harvest Treats offers</p>
+        <p class="offer-kicker">PANTRY SAVINGS</p>
+        <h2 id="offerTitle">Up to <strong>20%</strong> off</h2>
+        <p>On selected products. Every order gets a minimum <strong>10% off</strong>.</p>
+        <a class="offer-button" href="#products">View offers <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="offer-visual" aria-hidden="true">
+        <span class="offer-rings"></span>
+        <span class="offer-leaf offer-leaf-one"></span>
+        <span class="offer-leaf offer-leaf-two"></span>
+        <div class="offer-badge"><small>MINIMUM</small><strong>10% OFF</strong><span>GUARANTEED</span></div>
+      </div>
+    </section>
+
     <section class="storefront-intro" aria-labelledby="pageTitle">
       <div class="hero-copy">
         <p class="eyebrow">Everyday goodness, beautifully packed</p>
         <h1 id="pageTitle">A better pantry starts with a better snack.</h1>
         <p>Wholesome makhana, dry fruits, seeds and ghee for the little rituals that make every day feel good.</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#products">Shop the collection <span aria-hidden="true">→</span></a>
+          <a class="primary-button" href="#products">Product Gallery <span aria-hidden="true">→</span></a>
           <a class="text-link" href="#categories">Explore categories <span aria-hidden="true">↘</span></a>
         </div>
       </div>
@@ -329,6 +345,38 @@
         </article>
       </div>
     </section>
+
+    <section class="reviews-section" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="reviews-heading">
+        <div>
+          <p class="eyebrow">From the Harvest Treats community</p>
+          <h2 id="reviewsTitle">Kind words from our customers.</h2>
+        </div>
+        <a class="reviews-rating" href="https://share.google/TxAdktT5eg34Be6N7" target="_blank" rel="noopener noreferrer" aria-label="Read all Harvest Treats Google reviews">
+          <span aria-hidden="true">★★★★★</span>
+          <strong>5.0</strong>
+          <small>from 13 Google reviews</small>
+        </a>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Tastes good and hassle free delivery.”</blockquote>
+          <p>— Anwesha Das, Google review</p>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Quality is very good for all products...”</blockquote>
+          <p>— saroj kar, Google review</p>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Their premium makhana is a must try.”</blockquote>
+          <p>— Anup Sharma, Google review</p>
+        </article>
+      </div>
+      <a class="reviews-link" href="https://share.google/TxAdktT5eg34Be6N7" target="_blank" rel="noopener noreferrer">Read all reviews on Google <span aria-hidden="true">↗</span></a>
+    </section>
   </main>
 
   <aside class="cart-panel" id="cartPanel" aria-labelledby="cartTitle" aria-hidden="true">
@@ -350,7 +398,7 @@
 
 
   <footer class="site-footer" id="contact">
-    <div>
+    <div class="footer-brand">
       <img src="Logo.jpeg" alt="Harvest Treats Logo" width="220" height="147">
       <p>Harvest Treats - Eat, Enjoy, Share.</p>
     </div>
@@ -362,6 +410,7 @@
     <address class="contact-info">
       <strong>Contact Us</strong>
       <a href="tel:+919123068708">9123068708</a>
+      <a href="mailto:treatsharvest@gmail.com">treatsharvest@gmail.com</a>
       <div class="social-links" aria-label="Harvest Treats social media links">
         <a class="social-icon" href="https://wa.me/919123068708" target="_blank" rel="noopener noreferrer" aria-label="Chat With Harvest Treats On WhatsApp">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 3.6A11.7 11.7 0 0 0 12.1.2C5.7.2.5 5.4.5 11.8c0 2 .5 3.9 1.5 5.6L.4 23.2l6-1.6a11.6 11.6 0 0 0 5.7 1.5h.1c6.4 0 11.6-5.2 11.6-11.6 0-3.1-1.2-6-3.4-7.9Zm-8.3 17.5c-1.7 0-3.4-.5-4.8-1.4L7 19.5l-3.6 1 .9-3.5-.2-.4a9.5 9.5 0 1 1 8 4.5Zm5.2-7.1c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1a7.7 7.7 0 0 1-2.3-1.4 8.4 8.4 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.6l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.5-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2 .1.6-.1 1.7-.7 2-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z"/></svg>

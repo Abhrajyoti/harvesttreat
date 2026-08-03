@@ -201,6 +201,7 @@ function renderProduct(product) {
   const card = document.createElement("article");
   card.className = "product-card";
   card.dataset.productId = product.id;
+  const bagQuantity = state.cart.find((item) => item.id === product.id)?.qty || 0;
 
   card.innerHTML = `
     <div class="product-media">
@@ -225,7 +226,16 @@ function renderProduct(product) {
         </div>
         <span>${product.discount}% Off</span>
       </div>
-      <button type="button" data-add="${product.id}">Add to bag</button>
+      <div class="product-actions">
+        ${bagQuantity ? `
+          <div class="quantity-control product-quantity-control" aria-label="Quantity for ${product.name}">
+            <button type="button" data-product-decrease="${product.id}" aria-label="Decrease quantity of ${product.name}">−</button>
+            <span aria-live="polite">${bagQuantity}</span>
+            <button type="button" data-product-increase="${product.id}" aria-label="Increase quantity of ${product.name}" ${bagQuantity >= MAX_ITEM_QUANTITY ? "disabled" : ""}>+</button>
+          </div>
+        ` : `<button type="button" data-add="${product.id}">Add to bag</button>`}
+        <button class="go-to-bag" type="button" data-go-bag>Go to bag</button>
+      </div>
     </div>
   `;
 
@@ -276,13 +286,14 @@ function addToCart(productId) {
   }
   setCartMessage("");
   saveCart();
+  renderProducts();
   renderCart();
-  openCart();
 }
 
 function removeFromCart(productId) {
   state.cart = state.cart.filter((item) => item.id !== productId);
   saveCart();
+  renderProducts();
   renderCart();
 }
 
@@ -301,6 +312,7 @@ function updateCartQuantity(productId, change) {
   else {
     setCartMessage("");
     saveCart();
+    renderProducts();
     renderCart();
   }
 }
@@ -399,6 +411,12 @@ resetFromEmpty.addEventListener("click", resetSearch);
 productGrid.addEventListener("click", (event) => {
   const button = event.target.closest("[data-add]");
   if (button) addToCart(button.dataset.add);
+  const goToBagButton = event.target.closest("[data-go-bag]");
+  if (goToBagButton) openCart();
+  const increaseButton = event.target.closest("[data-product-increase]");
+  if (increaseButton) updateCartQuantity(increaseButton.dataset.productIncrease, 1);
+  const decreaseButton = event.target.closest("[data-product-decrease]");
+  if (decreaseButton) updateCartQuantity(decreaseButton.dataset.productDecrease, -1);
 });
 
 cartItems.addEventListener("click", (event) => {
