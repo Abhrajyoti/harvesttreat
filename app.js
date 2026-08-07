@@ -204,14 +204,14 @@ function renderProduct(product) {
   const bagQuantity = state.cart.find((item) => item.id === product.id)?.qty || 0;
 
   card.innerHTML = `
-    <div class="product-media">
+    <a class="product-media" href="product.html?product=${encodeURIComponent(product.id)}" aria-label="View details for ${product.name}">
       <span class="discount-badge">${product.discount}% Off</span>
       <img src="${product.image}" alt="${product.alt}" loading="lazy" width="448" height="598">
-    </div>
+    </a>
     <div class="product-body">
       <div>
         <p class="eyebrow">${product.category}</p>
-        <h3>${product.name}</h3>
+        <h3><a href="product.html?product=${encodeURIComponent(product.id)}">${product.name}</a></h3>
       </div>
       <p>${product.description}</p>
       <div class="product-meta">
