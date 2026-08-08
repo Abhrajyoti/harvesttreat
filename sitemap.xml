@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.harvesttreat.com/</loc>
+    <loc>https://www.harvesttreats.com/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=premium-makhana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=americano-almond</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=cashew-nuts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=dry-dates</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=roasted-mix-seed</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=pumpkin-seed</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=sunflower-seed</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=trail-mix</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.harvesttreats.com/product.html?product=pure-cow-ghee</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/premium-makhana/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/americano-almond/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/cashew-nuts/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/dry-dates/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/roasted-mix-seed/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/pumpkin-seed/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/sunflower-seed/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/trail-mix/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.harvesttreats.com/products/pure-cow-ghee/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
