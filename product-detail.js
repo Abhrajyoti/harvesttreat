@@ -13,6 +13,7 @@ const cartTotal = document.querySelector("#cartTotal");
 const formatPrice = (price) => `Rs. ${price.toLocaleString("en-IN")}`;
 
 document.querySelector(".brand")?.setAttribute("href", "/");
+document.querySelectorAll(".utility-message, .delivery-note").forEach((element) => { element.innerHTML = element.innerHTML.replaceAll("₹499", "₹799"); });
 
 function activeVariant() { return product?.variants?.find((variant) => variant.id === selectedVariantId); }
 function renderVariantPicker() { const variant = activeVariant(); const packLine = Array.from(document.querySelectorAll(".product-info > p")).find((element) => element.textContent.includes("Pack size:")); const priceLine = document.querySelector(".detail-price"); if (!variant || !packLine || !priceLine) return; packLine.innerHTML = `<label for="packSelect"><strong>Pack size:</strong></label> <select id="packSelect" class="pack-select">${product.variants.map((item) => `<option value="${item.id}" ${item.id === selectedVariantId ? "selected" : ""}>${item.quantity}</option>`).join("")}</select>`; priceLine.innerHTML = `<strong>${formatPrice(variant.sellingPrice)}</strong><del>${formatPrice(variant.mrp)}</del><span class="discount-label">${Math.round((1 - variant.sellingPrice / variant.mrp) * 100)}% OFF</span>`; document.querySelector("#packSelect").addEventListener("change", (event) => { selectedVariantId = event.target.value; renderVariantPicker(); }); }

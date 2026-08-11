@@ -182,6 +182,10 @@ const state = {
 const MAX_ITEM_QUANTITY = 10;
 const CART_STORAGE_KEY = "harvest-treats-bag";
 
+document.querySelectorAll(".utility-message, .delivery-note").forEach((element) => {
+  element.innerHTML = element.innerHTML.replaceAll("₹499", "₹799");
+});
+
 const productGrid = document.querySelector("#productGrid");
 const resultSummary = document.querySelector("#resultSummary");
 const searchInput = document.querySelector("#searchInput");
