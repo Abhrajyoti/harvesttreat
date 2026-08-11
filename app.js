@@ -1,3 +1,7 @@
+if (window.location.pathname === "/index.html") {
+  window.history.replaceState(null, "", "/");
+}
+
 const products = [
   {
     id: "premium-makhana",
