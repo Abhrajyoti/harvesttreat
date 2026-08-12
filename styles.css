@@ -53,3 +53,24 @@ h1,h2,h3,p { overflow-wrap:anywhere; } h1,h2 { font-family:"DM Serif Display",Ge
 @media (max-width:760px) { .founders-content { grid-template-columns:120px 1fr 120px; }.founder-card { max-width:120px; }.founders-copy { font-size:.94rem; } } @media (max-width:520px) { .founders-content { grid-template-columns:1fr 1fr; }.founders-copy { grid-column:1 / -1; grid-row:1; }.founder-card { max-width:115px; }.founder-card:last-child { justify-self:end; } }
 .founders-content { grid-template-columns:200px minmax(400px,1fr) 200px; max-width:1200px; }.founder-card { max-width:200px; }.founder-card img { height:225px; } @media (max-width:760px) { .founders-content { grid-template-columns:140px 1fr 140px; }.founder-card { max-width:140px; }.founder-card img { height:175px; } } @media (max-width:520px) { .founder-card { max-width:125px; }.founder-card img { height:160px; } }
 .founders-content { align-items:stretch; }.founder-card { display:grid; grid-template-rows:1fr auto; align-self:stretch; }.founder-card img { width:100%; height:100%; min-height:0; } @media (max-width:760px) { .founders-content { align-items:center; }.founder-card { display:block; align-self:center; }.founder-card img { height:175px; } } @media (max-width:520px) { .founder-card img { height:160px; } }
+/* On phones, keep the founder story in a clear reading order instead of squeezing
+   the two portrait cards into the same narrow row. */
+@media (max-width:520px) {
+  .founders-content {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.35rem;
+  }
+  .founder-card {
+    width:min(100%,220px);
+    max-width:220px;
+  }
+  .founder-card img { height:250px; }
+  .founders-copy {
+    order:2;
+    width:100%;
+  }
+  .founder-card:first-child { order:1; }
+  .founder-card:last-child { order:3; justify-self:auto; }
+}
